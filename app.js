@@ -19,11 +19,11 @@ app.get('/', function (req, res) {
 app.post('/', function (req, res) {
   // Text to pass to API
   const text = req.body.text
-  let data = {text: text};
+  let input = {text: text};
 
   fetch(process.env.CloudFoundryServiceUrl, {
     method: 'POST',
-    body: JSON.stringify(data),
+    body: JSON.stringify(input),
     headers:{ 'Content-Type': 'application/json'}
     })
     .then(res => res.json())
