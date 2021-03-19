@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/is723302/01_Parcial#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1"
   }
 }
